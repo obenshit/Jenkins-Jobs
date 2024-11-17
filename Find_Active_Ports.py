@@ -55,3 +55,4 @@ if __name__ == "__main__":
     else:
         print("\n\n")
         print("Failed to connect to the device.")
+        print("test for git on VScode")
