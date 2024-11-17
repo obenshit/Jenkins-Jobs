@@ -52,7 +52,7 @@ if __name__ == "__main__":
     if active_ports is not None:
         print("\n\n")
         print(f"Found {active_ports} active ports on the device.")
+        print("test for git on VScode")
     else:
         print("\n\n")
         print("Failed to connect to the device.")
-        print("test for git on VScode")
