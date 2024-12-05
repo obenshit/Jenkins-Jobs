@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run Python Script') {
             steps {
-                sh 'python3 Find_Active_Ports.py'
+                sh 'python3 Test Pipeline Script'
             }
         }
     }
