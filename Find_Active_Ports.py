@@ -2,7 +2,7 @@ from netmiko import ConnectHandler, NetMikoTimeoutException, NetMikoAuthenticati
 import argparse
 
 def connect_and_check_ports(ip_or_dns, username, password):
-    # Define connection parameters for SSH
+    # Define connection parameters for SSH.
     device = {
         'device_type': 'cisco_ios',  # Start with SSH
         'host': ip_or_dns,
