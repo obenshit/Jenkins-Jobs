@@ -27,7 +27,7 @@ def connect_ssh(host, username, password):
 
 def configure_ntp(ssh):
     print("""############ configure the NTP Server ############""")
-    cmd = "bash -c \"echo 'server ntp.esl.cisco.com' >> /etc/chrony.conf && systemctl restart chronyd\""
+    cmd = "echo 'server ntp.esl.cisco.com' | tee -a /etc/chrony.conf && systemctl restart chronyd"
     stdin, stdout, stderr = ssh.exec_command(cmd)
     exit_status = stdout.channel.recv_exit_status()
     if exit_status == 0:
