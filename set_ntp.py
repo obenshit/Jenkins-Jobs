@@ -3,7 +3,8 @@ import argparse
 
 def main():
     try:
-        print("🚀 Starting script", flush=True)
+        print
+        print("\n🚀 Starting script", flush=True)
         parser = argparse.ArgumentParser(description='configure NTP')
         parser.add_argument('--host', help="hostname or IP")
         parser.add_argument('--username', help="SSH username")
